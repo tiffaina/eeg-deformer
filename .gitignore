@@ -1,0 +1,10 @@
+# Datasets
+*.mat
+
+# Conda / installers
+Miniconda3-*.sh
+
+# Environments
+conda/
+env/
+.conda/
