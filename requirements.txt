@@ -1,0 +1,97 @@
+# # ============================================
+# # EEG-Deformer minimal environment
+# # macOS ARM / MPS-compatible
+# # Purpose: run the original training scripts
+# # ============================================
+
+# # --- Core ML frameworks ---
+# torch==2.0.1
+# pytorch-lightning==2.0.9.post0
+# torchmetrics==1.2.0
+# einops==0.7.0
+# `211
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# torchmetrics==1.2.0
+# einops==0.7.0
+# 2.0.1                                                                                                                                                                           
+# # --- Scientific computing ---
+# numpy==1.26.0
+# scipy==1.11.3
+# scikit-learn==1.3.1
+# pandas
+# seaborn
+
+# # --- EEG / neuroscience I/O ---
+# mne==1.5.1          # EEG data handling
+# pyEDFlib==0.1.34    # EDF file support
+# pyxdf==1.16.4       # XDF file support
+
+# # --- Visualization & progress ---
+# matplotlib==3.8.0
+# tqdm==4.66.1
+
+# # --- Configuration utilities (used in repo) ---
+# hydra-core==1.3.2
+# omegaconf==2.3.0
+
+
+torch>=1.10.0
+torchvision>=0.11.0
+tensorboard
+torchaudio>=0.10.0
+numpy>=1.21.0
+scipy>=1.7.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+tqdm>=4.62.0
+einops>=0.4.0
+tensorboard>=2.8.0
+wandb>=0.12.0  # For experiment tracking
