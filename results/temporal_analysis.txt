@@ -1,0 +1,112 @@
+================================================================================
+TEMPORAL ORDER ANALYSIS - VALENCE
+================================================================================
+
+============================================================
+1. ORIGINAL DATA (No shuffling)
+============================================================
+
+Loading DREAMER dataset from DREAMER.mat...
+Processing 23 subjects...
+Generated 56580 segments
+Label distribution: [33299 23281]
+Loading DREAMER dataset from DREAMER.mat...
+Processing 23 subjects...
+Generated 56580 segments
+Label distribution: [33299 23281]
+Training CNN on original data...
+  Epoch 10: Test Acc = 70.74%, Best = 71.06%
+  Epoch 20: Test Acc = 73.20%, Best = 73.20%
+  Epoch 30: Test Acc = 64.17%, Best = 74.20%
+CNN Original: 74.20%
+
+Training EEGDeformer on original data...
+  Epoch 10: Test Acc = 72.69%, Best = 72.69%
+  Epoch 20: Test Acc = 74.66%, Best = 75.26%
+  Epoch 30: Test Acc = 75.76%, Best = 75.95%
+EEGDeformer Original: 75.95%
+
+
+============================================================
+2. RANDOMLY SHUFFLED TIME POINTS
+============================================================
+
+Training CNN on random shuffled data...
+  Epoch 10: Test Acc = 51.81%, Best = 58.85%
+  Epoch 20: Test Acc = 41.71%, Best = 58.85%
+  Epoch 30: Test Acc = 51.14%, Best = 58.85%
+CNN random: 58.85%
+  Change: -15.35%
+
+Training EEGDeformer on random shuffled data...
+  Epoch 10: Test Acc = 41.15%, Best = 58.85%
+  Epoch 20: Test Acc = 41.15%, Best = 58.85%
+  Epoch 30: Test Acc = 41.15%, Best = 58.85%
+EEGDeformer random: 58.85%
+  Change: -17.09%
+
+
+============================================================
+2. REVERSED TIME DIMENSION
+============================================================
+
+Training CNN on reverse shuffled data...
+  Epoch 10: Test Acc = 70.85%, Best = 70.85%
+  Epoch 20: Test Acc = 68.15%, Best = 74.20%
+  Epoch 30: Test Acc = 72.04%, Best = 74.53%
+CNN reverse: 74.53%
+  Change: +0.33%
+
+Training EEGDeformer on reverse shuffled data...
+  Epoch 10: Test Acc = 69.47%, Best = 71.26%
+  Epoch 20: Test Acc = 71.82%, Best = 73.77%
+  Epoch 30: Test Acc = 72.82%, Best = 74.42%
+EEGDeformer reverse: 74.42%
+  Change: -1.53%
+
+
+============================================================
+2. SWAPPED FIRST/SECOND HALF
+============================================================
+
+Training CNN on block shuffled data...
+  Epoch 10: Test Acc = 67.56%, Best = 70.44%
+  Epoch 20: Test Acc = 71.87%, Best = 73.70%
+  Epoch 30: Test Acc = 73.38%, Best = 74.27%
+CNN block: 74.27%
+  Change: +0.06%
+
+Training EEGDeformer on block shuffled data...
+  Epoch 10: Test Acc = 70.00%, Best = 72.08%
+  Epoch 20: Test Acc = 73.37%, Best = 73.95%
+  Epoch 30: Test Acc = 75.69%, Best = 75.69%
+EEGDeformer block: 75.69%
+  Change: -0.26%
+
+
+================================================================================
+TEMPORAL ORDER ANALYSIS SUMMARY
+================================================================================
+
+Condition                      CNN          EEGDeformer  Difference
+--------------------------------------------------------------------------------
+Original (No shuffle)          74.20      % 75.95      % +1.74%
+Randomly shuffled time points  58.85      % 58.85      % +0.00%
+Reversed time dimension        74.53      % 74.42      % -0.11%
+Swapped first/second half      74.27      % 75.69      % +1.42%
+
+--------------------------------------------------------------------------------
+Performance Drops from Original:
+--------------------------------------------------------------------------------
+Randomly shuffled time points  CNN: -15.35%  Deformer: -17.09%
+Reversed time dimension        CNN: +0.33%  Deformer: -1.53%
+Swapped first/second half      CNN: +0.06%  Deformer: -0.26%
+
+================================================================================
+INTERPRETATION:
+================================================================================
+✓ Temporal order matters MORE for Transformer
+  CNN drop: -4.99%
+  Transformer drop: -6.29%
+  → Transformer learns temporal patterns CNN ignores
+================================================================================
