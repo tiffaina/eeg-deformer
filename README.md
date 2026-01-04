@@ -5,9 +5,9 @@ Paper: https://ieeexplore.ieee.org/document/10763464
 Paper's Github: https://github.com/yi-ding-cs/EEG-Deformer	
 
 
-### DREAMER
+ DREAMER
 * Download from [here]([https://www.kaggle.com/code/arkadiyhacks/dreamer-eeg-dataset/data](https://zenodo.org/records/546113?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc2NTI5NzY5OSwiZXhwIjoxNzY3ODMwMzk5fQ.eyJpZCI6IjQ1NzgyYWYwLTYyMWYtNDdmNi1iMjNkLTYzNDYyOTgzYzA0NCIsImRhdGEiOnt9LCJyYW5kb20iOiJlMDNmZjgxOTUwZmVhOWIyNzAyNDY3OTFiNmNmYzEzMiJ9.b_QSFTtWWHXbwtEl91rdt5m5O77UQZYJUDOriUHi8-H-2Ya3zBvRSEcrsshyX1dZKLHGEKf1DoqSIqJKUzAfxQ))  
-### Fatigue
+Fatigue
 * Download from [here]([https://www.nature.com/articles/s41597-019-0028-3](https://drive.google.com/file/d/1KwPPSHN14MAbhszGqC1O5nRei7oqllxl/view?usp=sharing))  
 
 
