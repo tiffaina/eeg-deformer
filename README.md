@@ -17,3 +17,5 @@ In the first cell of the  notebook, you will find the `PATH` variables. Update t
 # Change these paths to your local storage or Drive location
 FATIGUE_DATA_PATH = '/content/drive/MyDrive/path_to/data_eeg_FATIG_FTG'
 DREAMER_MAT_PATH = '/content/drive/MyDrive/path_to/DREAMER.mat'
+
+All experiments can be run from the Run.ipynb notebook
